@@ -1,0 +1,40 @@
+.bigpipe {
+  display: flex;
+  height: 95vh;
+  flex-direction: column;
+}
+
+.bigpipe-header {
+  height: 100px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: wheat;
+}
+
+.bigpipe-body {
+  display: flex;
+  flex: 1;
+}
+
+#B {
+  flex: 1;
+  background-color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#A, #C {
+  flex: 0 0 20em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#A {
+  background-color: blue;
+}
+#C {
+  background-color: red;
+}

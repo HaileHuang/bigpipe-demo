@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- css and js tags -->
+    <link rel="stylesheet" href="index.css" />
+    <script>
+    function dateFormat(date) {
+      return `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+    }
+    function renderFlushCon(selector, html) {
+        html += '<br /> receive time: ';
+        html += dateFormat(new Date());
+        html += '<br /> receive timestamp: ';
+        html += Date.now();
+        document.querySelector(selector).innerHTML = html;
+    }
+    </script>
+</head>
+<body class="bigpipe">
+    <div class="bigpipe-header">Bigpipe Demo</div>
+    <div class="bigpipe-body">
+        <div id="A">Loading...</div>
+        <div id="B">Loading...</div>
+        <div id="C">Loading...</div>
+    </div>
+    
